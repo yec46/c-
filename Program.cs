@@ -4,26 +4,30 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace A021_LogicalOperators
+namespace A22
 {
     class Program
     {
         static void Main(string[] args)
         {
-            bool result;
-            int first = 10, second = 20;
+            int x = 14, y = 11, result;
+            result = x | y;
+            Console.WriteLine("{0} | {1} = 2", x, y, result);
 
-            result = (first == second) || (first > 5);
-            Console.WriteLine("{0} || {1} : {2}", first == second, first > 5, result);
+            result = x & y;
+            Console.WriteLine("{0} & {1} = {2}", x, y, result);
 
-            result = (first == second) && (first > 5);
-            Console.WriteLine("{0} && {1} : {2}", first == second, first > 5, result);
+            result = x ^ y;
+            Console.WriteLine("{0} ^ {1} = {2}", x, y, result);
 
-            result = true ^ false;
-            Console.WriteLine("{0} ^ {1} : {2}", true, false, result);
+            result = ~x;
+            Console.WriteLine("~{0} = {1} ", x, result);
 
-            result = !(first > second);
-            Console.WriteLine("!{0} : {1}", first > second, result);
+            result = x << 2;
+            Console.WriteLine("{0} << 2 = {1}", x, result);
+
+            result = y >> 1;
+            Console.WriteLine("{0} >> 1 = {1}", y, result);
         }
     }
 }
