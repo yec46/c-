@@ -1,0 +1,7 @@
+int Console.Read()  콘솔에서 한글자를 읽는다.
+string Console.Read() 콘솔에서 한줄을 읽는다.
+void Console.Write() 콘솔에 문자열(스트링)을 출력한다.
+void Console.WriteLine() 콘솔에 문자열(스트링)을 출력하고 줄을 바꾼다.
+
+겹따옴표(") 앞에 @를 쓰면 이스케이프 시퀀스를 무시합니다.
+string b = @"C:\Docs\Source\a.txt" ;
